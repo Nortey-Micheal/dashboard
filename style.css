@@ -1,0 +1,109 @@
+:root{
+    --blue: #
+}
+
+@font-face {
+    font-family: "young-serif";
+    src: url(fonts/YoungSerif-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(fonts/RobotoCondensed-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+li,a{
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    line-height: 1.5;
+    font-family: Roboto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5{
+    font-family: young-serif;
+}
+
+body>div{
+    width: min(95%,1500px);
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template: 0.7fr 4fr / 1fr 5fr;
+    grid-template-areas: "menu details" "menu cards";
+    gap: 15px;
+}
+
+input[type="search"]{
+    width: 100%;
+    border-radius: 30px;
+    padding: 3px;
+    /* background-color: gray; */
+}
+
+.menu{
+    grid-area: menu;
+}
+
+.details{
+    grid-area: details;
+    display: grid;
+    grid-template-rows: 0.5fr 0.5fr;
+}
+
+.details>div:first-of-type{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15%;
+    align-items: start;
+}
+
+.details>div:last-of-type{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5%;
+}
+
+.details>div:last-of-type>div:first-of-type{
+    display: grid;
+    grid-template-columns: 0.5fr 3fr;
+}
+
+.details>div:last-of-type>div:last-of-type>ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.details>div:first-of-type>div:last-of-type>ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+}
+
+.cards{
+    grid-area: cards;
+    display: grid;
+    grid-template: 1fr / 5fr 2fr;
+    gap: 15px;
+}
+
+.cards>div:first-of-type>div{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, min(50%,300px));
+    gap: 15px;
+}
+
+/* .cards>div:first-of-type>div>div{
+    width: 500px;
+} */
