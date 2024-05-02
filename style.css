@@ -48,7 +48,7 @@ h5{
 body>div{
     width: min(95%,1500px);
     margin: 0 auto;
-    min-width: 1310px;
+    min-width: 1000px;
     display: grid;
     grid-template: 20vh 4fr / 1.5fr 5fr;
     grid-template-areas: "menu details" "menu cards";
@@ -168,7 +168,6 @@ input[type="search"]{
     grid-auto-flow: column;
     grid-template-columns: 0.1fr 3fr;
     gap: 3%;
-    /* align-items: center; */
     height: 40px;
 }
 
