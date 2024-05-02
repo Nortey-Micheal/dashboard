@@ -46,9 +46,9 @@ h5{
 }
 
 body>div{
-    width: min(95%,1500px);
+    width: min(100%,1500px);
     margin: 0 auto;
-    min-width: 1000px;
+    min-width: 1200px;
     display: grid;
     grid-template: 20vh 4fr / 1.5fr 5fr;
     grid-template-areas: "menu details" "menu cards";
